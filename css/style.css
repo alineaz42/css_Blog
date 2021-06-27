@@ -1,91 +1,70 @@
-*{padding: 0;margin: 0;box-sizing: border-box;}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
-    font-family: Arial, Helvetica, sans-serif;
     background: #f1f1f1;
+    font-family: monospace;
 }
 .container-blog{
     width: 100%;
-    padding: 3rem;
     text-align: center;
     background: white;
-    margin: 1rem 0;
 }
 .container-blog h1{
-    font-size: 4rem;
-    font-weight: bolder;
+    padding: 3rem;
+    font-size: 3.5rem;
 }
-.row{
+.my-card{
     width: 100%;
+    margin-bottom: 57px;
+    background-color: white;
 }
-.left-card{
-    width: 65%;
+.my-card h1,
+p{
+    padding: .5rem 1rem;
 }
-.left-card img{
+.my-card h1{
+    padding-top: 1rem;
+}
+.my-card img{
     width: 95%;
-    margin: 10px auto;
+    margin: auto;
+    display: block;
 }
-.left-card .card h1{
-    font-size: 3rem;
+.about-me{
+    width: 100%;
+    background: white;
+
+}
+.about-me h1{
     padding: 1rem;
 }
-.left-card .card p:nth-child(1){
-    font-size: 1.7rem;
-}
-.left-card .card p{
-    margin-left: .5rem;
-}
-.right-card{
-    width: 30%;
-    margin-left: auto;
-}
-.card{
-    margin-bottom: 50px;
-}
-.aboutMe{
-    background: white;
-}
-.aboutMe img{
-    width: 95%;
-    margin: auto;
-    display: block;
-}
-.aboutMe h1{
-    padding: .5rem;
-}
-.aboutMe p{
-    padding: .5rem;
-}
-.right-card .images{
-    background: white;
-}
-.right-card .images img{
+.about-me img{
     width: 95%;
     display: block;
     margin: auto;
-    margin-bottom: 2rem;
-    padding: .5rem;
 }
+.images {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.images img{
+    width: 95%;
+    height: 215px;
+    margin: auto;
+    margin: 1rem 0;
+}
+
 .footer{
-    background: gray;
+    width: 100%;
     text-align: center;
-    padding: 2rem 0;
+    background: white;
 }
-
-
-
-/* responsive codes */
-@media all and (max-width: 591px){
-    .left-card{
-        width: 100%;
-    }
-    .right-card{
-        width: 100%;
-    }
-    .card{
-        width: 100%;
-    }
-    .images{
-        margin: auto;
-        display: block;
-    }
+.footer h1{
+    padding: 3rem;
+    font-size: 3.5rem;
 }
