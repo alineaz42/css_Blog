@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
+.main-container{
     background: #f1f1f1;
     font-family: monospace;
 }
@@ -20,6 +20,10 @@ body{
     width: 100%;
     margin-bottom: 57px;
     background-color: white;
+    transition: all .3s ease;
+}
+.my-card:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,.4);
 }
 .my-card h1,
 p{
@@ -36,7 +40,10 @@ p{
 .about-me{
     width: 100%;
     background: white;
-
+    transition: all .5s ease;
+}
+.about-me:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,.4);
 }
 .about-me h1{
     padding: 1rem;
@@ -51,12 +58,18 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 .images img{
     width: 95%;
     height: 215px;
     margin: auto;
     margin: 1rem 0;
+    transition: all .5s ease;
+
+}
+.images img:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,.9);
 }
 
 .footer{
@@ -67,4 +80,39 @@ p{
 .footer h1{
     padding: 3rem;
     font-size: 3.5rem;
+}
+
+.nightmode{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+}
+.nightmode button{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: white;
+    background: black;
+}
+
+#nightmode{
+    outline: none;
+}
+
+.ad{
+    width: 80%;
+    height: 100px;
+    position: fixed;
+    top: 10%;
+    right: -100%;
+    display: none;
+    transition: all .3s ease;
+}
+#adImage{
+    width: 75%;
+    height: 100px;
+}
+
+#close{
+    cursor: pointer;
 }
